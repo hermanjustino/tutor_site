@@ -1,0 +1,72 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+@keyframes bounce {
+    0% { transform: translateY(0); 
+    }
+    50% { transform: translateY(-20px);
+    }
+    100% { transform: translateY(0); 
+    }
+}
+
+#bounce {
+    animation: bounce 1s infinite;
+}
+
+#image-stack {
+    position: relative;
+    width: 300px;
+    height: 300px; 
+    margin-top: 15%;
+
+}
+
+
+
+ /* Mobile styles */
+@media only screen and (max-width: 600px) {
+    #image-stack {
+      margin-top: 25%;
+    }
+  }
+  
+  /* Medium screen styles */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #image-stack {
+      margin-left: 25%; /* Adjust as needed */
+    }
+  }
+  
+  /* Desktop styles */
+  @media only screen and (min-width: 1025px) {
+    #image-stack {
+      margin-left: 38%; /* Adjust as needed */
+    }
+  }
+  
+  #image-stack img {
+    position: absolute;
+  }
+
+  #image-stack img {
+    top: 12px;
+    left: -5px;
+  }
+  
+  
+  #image-stack img:nth-child(2) {
+    top: -14px;
+    left: 9px;
+  }
+  
+  #image-stack img:nth-child(3) {
+    top: -35px;
+    left: 23px;
+  }
